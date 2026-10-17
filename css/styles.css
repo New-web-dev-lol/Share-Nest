@@ -1,0 +1,70 @@
+*{
+    margin: o;
+    padding: 0;
+}
+body{
+    background-color: red;
+    padding: 0 100px;
+    background-color: hsl(180,100%,7%);
+}
+/* Start of NAV */
+.navBarSection{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(180,100%,7%);
+}
+.navLogo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navBarSection ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.navBarSection a{
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    background-color:transparent;
+    padding: 5px 5px;
+    color: white;
+    border-radius: 4px;
+
+}
+.navBarSection a:hover{
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-color:hsl(111, 96%, 49%);
+    border-width: 2px;
+    color: hsl(111, 96%, 49%);
+}
+.navInput{
+    display: flex;
+    gap: 20px;
+}
+.navInput button{
+    cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+    color: white;
+}
+
+/* End of NAV */
+/* .firstSection{
+   width: 100%;
+   min-height: 400px;
+    background-color: hsl(190, 100%, 10%);
+    padding-top: 10px;
+    color: hsl(0, 33%, 93%);
+    background-image: url(css/images/galaxy.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+} */
+.hero span{
+    color:hsl(111, 98%, 68%)
+}
