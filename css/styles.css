@@ -1,56 +1,59 @@
-*{
-    margin: o;
-    padding: 0;
+* {
+  margin: o;
+  padding: 0;
 }
-body{
-    background-color: red;
-    padding: 0 100px;
-    background-color: hsl(180,100%,7%);
+body {
+  background-color: red;
+  padding: 0 100px;
+  background-color: hsl(180, 100%, 7%);
 }
 /* Start of NAV */
-.navBarSection{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: hsl(180,100%,7%);
+.navBarSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(180, 100%, 7%);
 }
-.navLogo{
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.navLogo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
-.navBarSection ul{
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    text-decoration: none;
+.navBarSection ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  text-decoration: none;
 }
-.navBarSection a{
-    text-decoration: none;
-    cursor: pointer;
-    display: block;
-    background-color:transparent;
-    padding: 5px 5px;
-    color: white;
-    border-radius: 4px;
-
+.navBarSection a {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  padding: 5px 5px;
+  color: white;
+  border-radius: 4px;
 }
-.navBarSection a:hover{
-    background-color: transparent;
-    border-bottom-style: solid;
-    border-bottom-color:hsl(111, 96%, 49%);
-    border-width: 2px;
-    color: hsl(111, 96%, 49%);
+.navBarSection a:hover {
+  background-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-color: hsl(111, 96%, 49%);
+  border-width: 2px;
+  color: hsl(111, 96%, 49%);
 }
-.navInput{
-    display: flex;
-    gap: 20px;
+.navInput {
+  display: flex;
+  gap: 20px;
 }
-.navInput button{
-    cursor: pointer;
-    background-color: transparent;
-    border-style: none;
-    color: white;
+.navInput button {
+  cursor: pointer;
+  background-color: transparent;
+  border-style: none;
+  color: white;
+}
+/* Sign in Container */
+form{
+  
 }
 
 /* End of NAV */
@@ -65,6 +68,108 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
 } */
-.hero span{
-    color:hsl(111, 98%, 68%)
+/* start of first sec */
+.firstSection {
+  color: white;
 }
+
+.firstSection ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.section1input {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 130px;
+  background-color: rgb(149, 10, 10);
+  width: 470px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.firstSection button,
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.hero span {
+  color: hsl(111, 98%, 68%);
+}
+/* End of first sec */
+
+/*Start of sec2 */
+.section2{
+background-color: transparent;
+height: 130px;
+border-bottom-style:solid;
+border-color: white;
+}
+.section2 p{
+    padding-left: 44%; 
+    color: white; 
+}
+.section2 h2{
+    padding-left: 44%;
+    color: white;
+}
+.section2 ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.section2 li{
+color: white;
+background-color:transparent;
+padding: 5px 10px;
+cursor: pointer;
+border-style:none;
+ font-weight: bolder;
+ }
+.section2 a:hover{
+    color:hsl(111, 96%, 49%) ;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    border-width: 4px;
+    border-radius: 5px;
+    border-bottom-color:hsl(111, 96%, 49%);
+}
+
+
+/*End of sec2 */
+
+
+.articleContainer{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  border-style: solid;
+  padding: 50px 50px;
+
+}
+.articleContainer p{
+  color :white;
+}
+.articleContainer h3{
+ font-size: xx-large;
+ font-weight: 900;
+ color:hsl(111, 96%, 49%);
+}
+.articleContainer article{
+  border-style: solid;
+  padding: 50px 150px;
+  
+}
+
+.articleContainer button{
+  cursor: pointer;
+}  
+
+
+
+/* Footer sec */
+ 
