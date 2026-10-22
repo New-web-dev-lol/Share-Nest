@@ -51,23 +51,109 @@ body {
   border-style: none;
   color: white;
 }
+/* Host container */
+.hostContainer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#hostForm {
+    position: relative;
+    width: 350px;
+    max-width: 85%;
+    padding: 30px;
+    background-color: hsl(180, 100%, 7%);
+    border-radius: 12px;
+    color: whitesmoke;
+}
+#closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: whitesmoke;
+    border-style: none;
+}
+.hostDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ .hostDetails input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+ .hostDetails button {
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 /* Sign in Container */
-form{
-  
+#signupOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#signupForm {
+    position: relative;
+    width: 350px;
+    max-width: 85%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+#closeSignup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#signupDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#signupDetails input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+#signupDetails button {
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 /* End of NAV */
-/* .firstSection{
-   width: 100%;
-   min-height: 400px;
-    background-color: hsl(190, 100%, 10%);
-    padding-top: 10px;
-    color: hsl(0, 33%, 93%);
-    background-image: url(css/images/galaxy.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-} */
+
 /* start of first sec */
 .firstSection {
   color: white;
@@ -142,6 +228,119 @@ border-style:none;
 
 /*End of sec2 */
 
+/* Subscriptions */
+/* Subscription container */
+.Entertainment{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.subContainer {
+    width: 100%;
+    max-width: 300px;
+    min-width: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2DA;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.subImage {
+    width: 100%;
+    height: 100px;
+    background-color: #DDE3D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.subImage img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+}
+
+/* Text and details area */
+.subscriptionContent {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+
+/* Category */
+.subCategory {
+    color: hsl(101, 10%, 42%);
+    font-size: 12px;
+}
+
+/* Subscription name */
+.subName {
+    color: rgb(48, 55, 47);
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.subDescription {
+    color:rgb(48, 55, 47) ;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.subscription-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid whitesmoke;
+    padding-top: 14px;
+    margin-top: auto;
+}
+
+.subscription-price h4 {
+    color:rgb(48, 55, 47) ;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.subscription-price p {
+    color:rgb(48, 55, 47);
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.subscription-slots {
+    color:rgb(48, 55, 47) ;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.subJoinButton {
+    width: 100%;
+    background-color:rgb(48, 55, 47) ;
+    color:whitesmoke;
+    font-size: 14px;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.subJoinButton:hover {
+    background-color: #30372F;
+}
+
+/* END OF SUBSCRIPTION */
 
 .articleContainer{
   display: flex;
