@@ -4,6 +4,83 @@ const signupOverlay = document.getElementById("signupOverlay")
 
 const closeSignup = document.getElementById("closeSignup")
 
+// category buttons
+const allButton = document.getElementById("allBtn")
+const entertainmentButton = document.getElementById("entertainmentBtn")
+const devButton = document.getElementById("devBtn")
+const gamingButton = document.getElementById("gamingBtn")
+const musicButton = document.getElementById("musicBtn")
+const aiToolsBtn = document.getElementById("aiToolsBtn")
+
+
+// looping
+const entertainment = document.querySelector(".Entertainment")
+const music = document.querySelector(".music")
+const gaming = document.querySelector(".gaming")
+const aiTools = document.querySelector(".AITools")
+const work = document.querySelector(".Work")
+
+
+// All button
+allButton.addEventListener("click", function () {
+     entertainment.style.display = "flex"
+    gaming.style.display = "flex"
+    aiTools.style.display = "flex"
+    work.style.display = "flex"
+    music.style.display = "flex"
+})
+
+// Entertainment button
+entertainmentButton.addEventListener("click", function () {
+     entertainment.style.display = "flex"
+    gaming.style.display = "none"
+    aiTools.style.display = "none"
+    work.style.display = "none"
+    music.style.display = "none"
+})
+
+// Development button
+devButton.addEventListener("click", function () {
+    entertainment.style.display = "none"
+    gaming.style.display = "none"
+    aiTools.style.display = "none"
+    work.style.display = "flex"
+    music.style.display = "none"
+})
+
+// Gaming button
+gamingButton.addEventListener("click", function () {
+     entertainment.style.display = "none"
+    gaming.style.display = "flex"
+    aiTools.style.display = "none"
+    work.style.display = "none"
+    music.style.display = "none"
+})
+
+// Music button
+musicButton.addEventListener("click", function () {
+    entertainment.style.display = "none"
+    gaming.style.display = "none"
+    aiTools.style.display = "none"
+    work.style.display = "none"
+    music.style.display = "flex"
+})
+
+// AI Tools button
+aiToolsBtn.addEventListener("click", function () {
+    entertainment.style.display = "none"
+    gaming.style.display = "none"
+    aiTools.style.display = "flex"
+    work.style.display = "none"
+    music.style.display = "none"
+})
+
+
+
+
+
+
+
 
 // sign up btn
 
@@ -41,3 +118,5 @@ closebtn.addEventListener("click", function() {
 
 
 // 
+
+

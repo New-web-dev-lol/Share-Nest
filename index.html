@@ -12,15 +12,16 @@
   <header>
     <nav class="navBarSection">
       <div class="navLogo">
-          <img src="#"/>
+          <img src="css/images/nest.jpg" width="50px"/>
           <h2>ShareNest</h2>
       </div>
 
       <div>
        <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Explore</a></li>
+        <li><a href="#Explore">Explore</a></li>
         <li><a href="#">How it works</a></li>
+        <li><a href="#">Authentication</a></li>
       </ul>
       </div>
 
@@ -36,35 +37,20 @@
     <div id="hostForm">
         <button id="closebtn">X</button>
 
-        <h2>Create Account</h2>
-        <p>Sign up to get started</p>
+        <h2>Become a Host</h2>
+        <p>Get started today</p>
 
         <form class="hostDetails">
             <label for="fullName">Full Name</label>
-            <input
-                type="text"
-                id="fullName"
-                placeholder="Enter your full name"
-                required
-            >
+            <input type="text" id="fullName" placeholder="Enter Your Full Name"  required>
 
             <label for="signupEmail">Email Address</label>
-            <input
-                type="email"
-                id="signupEmail"
-                placeholder="Enter your email"
-                required
-            >
+            <input type="email"  id="signupEmail"  placeholder="Enter your email"  required>
+                
+            <label for="subscriptiontype">Subscription type</label>
+            <input  type="text" placeholder="List subscription"  required>
 
-            <label for="signupPassword">Password</label>
-            <input
-                type="password"
-                id="signupPassword"
-                placeholder="Create a password"
-                required
-            >
-
-            <button type="submit">Create Account</button>
+            <button type="submit">Become a Host</button>
         </form>
         </p>
     </div>
@@ -146,7 +132,7 @@
     <!-- End of sec1 -->
 
     <!-- Sect 2 -->
-     <div class="section2">
+     <div class="section2" id="Explore">
       <div>
       <h2>
         Explore cartegories
@@ -154,14 +140,14 @@
       <p>Find the right services you need</p>
      </div>
 
-     <div>
+     <div class="cartegoryList" >
       <ul>
-        <li><a>Entertainment</a></li>
-        <li><a>Music</a></li>
-        <li><a>Gaming</a></li>
-        <li><a>AI Tools</a></li>
-        <li><a>Gaming</a></li>
-        <li><a>Productivity and Cloud storage</a></li>
+        <li><button id="allBtn"><a>ALL</a></button></li>
+        <li><button id="entertainmentBtn"><a>Entertainment</a></button></li>
+        <li><button id="musicBtn"><a>Music</a></button></li>
+        <li><button id="aiToolsBtn"><a>AI Tools</a></button></li>
+        <li><button id="devBtn"><a>DEV & WORK</a></button></li>
+        <li><button id="gamingBtn"><a>Gaming</a></button></li>
       </ul>
      </div>
      </div>
@@ -172,167 +158,12 @@
       <h2>Popular subscriptions</h2>
       <p>Compare available seats and monthly prices.</p>
 
-    <!-- <div>
-      <ul> 
-        <div class="articleContainer">
-        <li>
-          <article>
-            <h3>Adobe Photoshop</h3>
-            <p>Design tools</p>
-            <p>From KSh 350 / month</p>
-            <p>3 seats available</p>
-          <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Spotify Premium</h3>
-            <p>Entertainment</p>
-            <p>From KSh 250 / month</p>
-            <p>5 seats available</p>
-          <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Canva Pro</h3>
-            <p>Design tools</p>
-            <p>From KSh 300 / month</p>
-            <p>2 seats available</p>
-            <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-        </li>
-        </div>
-
-        <div class="articleContainer">
-        <li>
-          <article>
-            <h3>Adobe Photoshop</h3>
-            <p>Design tools</p>
-            <p>From KSh 350 / month</p>
-            <p>3 seats available</p>
-            <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Spotify Premium</h3>
-            <p>Entertainment</p>
-            <p>From KSh 250 / month</p>
-            <p>5 seats available</p>
-           <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Canva Pro</h3>
-            <p>Design tools</p>
-            <p>From KSh 300 / month</p>
-            <p>2 seats available</p>
-          <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-        </li>
-        </div>
-
-        <div class="articleContainer">
-        <li>
-          <article>
-            <h3>Microsoft 365</h3>
-            <p>Productivity</p>
-            <p>From KSh 400 / month</p>
-            <p>4 seats available</p>
-           <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Notion Pro</h3>
-            <p>Productivity</p>
-            <p>From KSh 350 / month</p>
-            <p>3 seats available</p>
-           <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-        </li>
-        <li>
-       <article>
-            <h3>Notion Pro</h3>
-            <p>Productivity</p>
-            <p>From KSh 350 / month</p>
-            <p>3 seats available</p>
-           <button>
-             <a href="#">Join</a>
-           </button>
-          </article>
-            
-        </li>
-      </ul>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Why use ShareNest?</h2>
-      <ul>
-        <li>
-          <h3>Reviewed listings</h3>
-          <p>Know what has been checked before joining.</p>
-        </li>
-        <li>
-          <h3>Clear pricing</h3>
-          <p>See the seat price and fees before paying.</p>
-        </li>
-        <li>
-          <h3>Help when needed</h3>
-          <p>A clear process for access issues and disputes.</p>
-        </li>
-      </ul>
-    </section>
-
-    <aside>
-      <h2>Have unused seats?</h2>
-      <p>List eligible seats and recover part of your subscription cost.</p>
-      <a href="#">Become a provider</a>
-    </aside>
-
-    <section>
-      <h2>How it works</h2>
-      <p>Getting started is simple.</p>
-      <ol>
-        <li>
-          <h3>Find a subscription</h3>
-          <p>Browse eligible plans and compare prices.</p>
-        </li>
-        <li>
-          <h3>Pay your share</h3>
-          <p>See the full cost before committing.</p>
-        </li>
-        <li>
-          <h3>Get authorised access</h3>
-          <p>Join through the provider's permitted access method.</p>
-        </li>
-      </ol>
-    </section> -->
 
 
+      
     <!-- START OF SUBSCRIPTIONS -->
  <section>
-<div class="Entertainment">
+<div class="parentContainer Entertainment" >
 
   <!-- NETFLIX -->
 <div class="subContainer">
@@ -486,7 +317,7 @@
 
 
  <!-- Music -->
-<div class="Entertainment">
+<div class="parentContainer music">
 
 <div class="subContainer">
 
@@ -633,7 +464,7 @@
     </div>
 </div>
 </div>
- <div class="Entertainment">
+ <div class="parentContainer gaming">
 
   <!-- Gaming -->
 <div class="subContainer">
@@ -784,12 +615,12 @@
 </div> 
 
 
- <div class="Entertainment">
+ <div class="parentContainer AITools">
 
 <div class="subContainer">
 
     <div class="subImage">
-        <img src="css/images/chat.png" alt="Spotify logo">
+        <img src="css/images/chat.png" alt=" logo">
     </div>
 
     <div class="subscriptionContent">
@@ -935,7 +766,7 @@
 
 
 
- <div class="Entertainment">
+ <div class="parentContainer Work">
 
 <div class="subContainer">
 
@@ -1088,37 +919,37 @@
 
 
 
+<section id="authentication" class="authentication">
 
+    <div class="authentication-container">
 
+        <h2>Share Nest Authentication</h2>
 
+        <p>
+            To access subscription joining features on Share Nest,
+            each account is required to pay a one-time authentication
+            fee   font-family: 'DM Sans', sans-serif;of <strong>KSh 100</strong>.
+        </p>
 
+        <p>
+            This fee is paid only once per account, not every time
+            you join a subscription. Once your account has completed
+            authentication, you can proceed to join available
+            subscriptions without paying this fee again.
+        </p>
 
+        <p>
+            The fee helps us manage account access and support a
+            smoother sharing experience for our members.
+        </p>
 
+        <button class="payNowButton">
+            Pay Now — KSh 100
+        </button>
 
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</section>
 
        <section>
       <h2>Frequently asked questions</h2>

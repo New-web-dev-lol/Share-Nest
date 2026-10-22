@@ -3,9 +3,9 @@
   padding: 0;
 }
 body {
-  background-color: red;
   padding: 0 100px;
-  background-color: hsl(180, 100%, 7%);
+ background-color: hsl(180, 100%, 7%);
+
 }
 /* Start of NAV */
 .navBarSection {
@@ -13,11 +13,19 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: hsl(180, 100%, 7%);
+ 
+}
+.navLogo img{
+  border-radius: 5px;
 }
 .navLogo {
   display: flex;
   align-items: center;
   gap: 30px;
+   position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: whitesmoke;
 }
 .navBarSection ul {
   display: flex;
@@ -145,7 +153,7 @@ body {
 
 #signupDetails button {
     padding: 12px;
-    background-color: #e63946;
+    background-color:#e63946;
     color: white;
     border: none;
     border-radius: 6px;
@@ -230,10 +238,10 @@ border-style:none;
 
 /* Subscriptions */
 /* Subscription container */
-.Entertainment{
+.parentContainer{
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 .subContainer {
     width: 100%;
@@ -341,6 +349,30 @@ border-style:none;
 }
 
 /* END OF SUBSCRIPTION */
+
+/* Authenticator */
+.payNowButton {
+    padding: 13px 28px;
+    background-color: hsl(104, 10%, 30%);
+    color: hsl(43, 30%, 95%);
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid hsl(104, 10%, 30%);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payNowButton:hover {
+    background-color: hsl(100, 13%, 22%);
+    border-color: hsl(100, 13%, 22%);
+}
+
+.payNowButton:active {
+    transform: scale(0.98);
+}
+/* End of Authentic */
+
 
 .articleContainer{
   display: flex;
